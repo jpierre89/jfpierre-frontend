@@ -1,33 +1,7 @@
-
-<!-- Navigation -->
-<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-  <mat-button-toggle (click)="scrollToElement(splash)" value="Home">Home</mat-button-toggle>
-  <mat-button-toggle (click)="scrollToElement(about)" value="About">About</mat-button-toggle>
-  <mat-button-toggle (click)="scrollToElement(projects)" value="Projects">Projects</mat-button-toggle>
-</mat-button-toggle-group>
-
-
-<!-- Splash section -->
-<div id="splash" #splash class="section" (wheel)="scrollSnapToSection($event)" (scroll)="test($event)">
-  <h1>Hi, I'm Jon</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+<div>
+  <app-header></app-header>
+  <router-outlet></router-outlet>
 </div>
 
-<!-- About section -->
-<div id="about" #about class="section" (wheel)="scrollSnapToSection($event)">
-  <div style="display:block">
-    <h1>About</h1>
-  </div>
-</div>
 
-<!-- Projects section -->
-<div #projects class="section" (wheel)="scrollSnapToSection($event)">
-  <h1>Projects</h1>
-</div>
-
-<router-outlet></router-outlet>
 
