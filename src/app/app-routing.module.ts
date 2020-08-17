@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+//routing is down here
+
 const routes: Routes = [];
 
 @NgModule({
