@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;  // or inline-flex
+    // Direction of flex main axis - vertical
+    flex-direction: column;
+    // Wrap items to next line
+    flex-wrap: wrap;
+    
+    // Space between items along main axis
+    justify-content: center;
+    // How items are laid out along cross-axis - horizontal
+    align-items: center;
+
+    // multiple items
+    //align-content: center;
+}
+
+.child {
+    padding-top: 25vh;
+}
+
+
+.center-test {
+    //Flex
+    //height: 100vh;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+}
+

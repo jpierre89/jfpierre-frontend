@@ -35,18 +35,34 @@ $frontend-theme: mat-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-
+/*
 body {
   margin: 0;  // ma
 }
-
-html, body {
-  height: 100%;  // ma
+*/
+html, body, app-root {
   font-family: roboto;  // ma
+  height: 100%;  // ma
+  //width: 100%;
+  margin: 0;
+  //display: inline-block;
 }
-  
-.container {
-    height: 100%;
-    padding: 0px;
-  }
 
+.flex-container {
+  display: flex;  // or inline-flex
+  // Direction of flex main axis - vertical
+  flex-direction: column;
+  // Wrap items to next line
+  flex-wrap: wrap;
+  // Space between items along main axis
+  justify-content: center;
+  // How items are laid out along cross-axis - horizontal
+  align-items: center;
+  // multiple items
+  //align-content: center;
+}
+
+.pageheader {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
