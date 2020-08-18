@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule} from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 // Components
 import { AppComponent } from './app.component';
@@ -51,6 +52,7 @@ import { HomeComponent } from './components/home/home.component';
     MatButtonToggleModule,
     MatCardModule,
     MatIconModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
