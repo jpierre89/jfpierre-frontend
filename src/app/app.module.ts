@@ -12,6 +12,9 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule} from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatChipsModule } from '@angular/material/chips';
+import {MatDialogModule} from '@angular/material/dialog'; 
 
 // Components
 import { AppComponent } from './app.component';
@@ -23,6 +26,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { TheaterComponent } from './components/theater/theater.component';
 import { TheaterCardComponent } from './components/theater-card/theater-card.component';
 import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { EmailDialogComponent } from './components/email-dialog/email-dialog.component';
 
 
 @NgModule({
@@ -36,7 +41,9 @@ import { HomeComponent } from './components/home/home.component';
     ProjectsComponent,
     TheaterComponent,
     TheaterCardComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    EmailDialogComponent
   ],
   // Every module (import) of project must be declared here.
   imports: [
@@ -53,6 +60,9 @@ import { HomeComponent } from './components/home/home.component';
     MatCardModule,
     MatIconModule,
     MatTooltipModule,
+    MatDividerModule,
+    MatChipsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

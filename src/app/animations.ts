@@ -26,7 +26,7 @@ trigger('routeAnimations', [
         /* Matches the view that is entering and hides it
         by positioning it to the far right. */
         query(':enter', [
-            style({ left: '100%',})  //top left edge is on right border
+            style({ left: '300%',})  //top left edge is far right of right border
         ]),
         query(':leave', [
             style({ left: '0%',})  //top left edge is on right border
@@ -37,7 +37,7 @@ trigger('routeAnimations', [
         group([
             // Queries the view that is leaving and animates it to slide far to the left.
             query(':leave', [
-                animate('0.5s ease-in-out', style({ left: '-100%' }))
+                animate('0.5s ease-in-out', style({ left: '-300%' }))
             ]),
             // Queries the view that is entering and animates it to slide in from the right
             query(':enter', [
@@ -63,15 +63,15 @@ trigger('routeAnimations', [
         // Matches the view that is added and hides the newly added view
         //by positioning it to the far left.
         query(':enter', [
-            style({ left: '-100%' })
+            style({ left: '-300%' })
             ]),
         // Called on the view that is leaving, to run its child animations.
         query(':leave', animateChild()),
         // Make the inner animations run in parallel.
         group([
-            // Queries the view that is removed and animates it to slide far to the right.
+            // Queries the view that is leaving and animates it to slide far to the right.
             query(':leave', [
-                animate('0.5s ease-in-out', style({ left: '100%' }))
+                animate('0.5s ease-in-out', style({ left: '300%' }))
             ]),
             // Queries the view that is entering and animates it to slide in from the left
             query(':enter', [
