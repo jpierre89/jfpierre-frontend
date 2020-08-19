@@ -1,3 +1,14 @@
 .cardWidth {
-    max-width: 310px;
+    width: 300px;
+}
+
+.actions {
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    padding-left: 3px;
+    padding-right: 3px;
 }

@@ -1,7 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule} from '@angular/flex-layout';
 
@@ -20,10 +20,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
-import { SplashComponent } from './components/splash/splash.component';
-import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { TheaterComponent } from './components/theater/theater.component';
 import { TheaterCardComponent } from './components/theater-card/theater-card.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -35,11 +32,8 @@ import { EmailDialogComponent } from './components/email-dialog/email-dialog.com
   // CLI automatically puts CLI-created components
   declarations: [
     AppComponent,
-    SplashComponent,
-    AboutComponent,
     HeaderComponent,
     ProjectsComponent,
-    TheaterComponent,
     TheaterCardComponent,
     HomeComponent,
     FooterComponent,
@@ -64,7 +58,9 @@ import { EmailDialogComponent } from './components/email-dialog/email-dialog.com
     MatChipsModule,
     MatDialogModule,
   ],
-  providers: [],
+  providers: [
+    Title,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

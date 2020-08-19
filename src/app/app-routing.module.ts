@@ -3,9 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { SplashComponent } from './components/splash/splash.component';
-import { AboutComponent } from './components/about/about.component';
-import { TheaterComponent } from './components/theater/theater.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'HomePage'} },
