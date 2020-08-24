@@ -1,14 +1,29 @@
 .cardWidth {
-    width: 300px;
+    width: 310px;
 }
 
 .actions {
     display:flex;
-    flex-wrap: wrap;
-
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .box {
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+
+#last {
+    margin-left: 0;
+}
+
+.theater-image {
+    background-image: url("../../../assets/theater.gif");
+    background-size: cover;
+}
+
+.center-card-title {
+    display: flex;
+    justify-content: center;
 }

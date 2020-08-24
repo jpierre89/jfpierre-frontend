@@ -1,28 +1,30 @@
 <mat-card class="cardWidth">
-    <mat-card-header>
-        <mat-card-title>Sunset Theater</mat-card-title>
-        <mat-card-subtitle>reserve seats now</mat-card-subtitle>
+    <mat-card-header class="center-card-title">
+        <mat-card-title class="title">Sunset Theater</mat-card-title>
+        <!--<mat-card-subtitle>reserve seats now</mat-card-subtitle>-->
     </mat-card-header>
+    <img mat-card-image src="assets/theater.gif">
     <mat-card-content>
-        <p>
-            Pick a movie, showtime, and
-            select available seats from the auditorium.
-            Create an account, or login as a guest.
-        </p>
+        <h4>
+            Pick a movie show time and
+            choose your seats in the auditorium.
+            Fast and easy sign-up to log-in to your demo account.
+            These accounts are deleted periodically.
+            The available show seating is unique per account.
+            Run the project live.
+        </h4>
     </mat-card-content>
-    
-    <!-- <img mat-card-image> -->
     <mat-card-actions class="actions">
         <a class="box" mat-stroked-button href="https://theater.jfpierre.dev">
-            Run
+            Launch
         </a>
-        <a class="box" mat-stroked-button href="https://github.com/jpierre89/sunset-theater-frontend">
-            <mat-icon svgIcon='github'></mat-icon>
+        <a class="box" mat-stroked-button href="https://github.com/jpierre89/sunset-theater-frontend">      
             Frontend
-        </a>
-        <a class="box" mat-stroked-button href="https://github.com/jpierre89/sunset-theater">
             <mat-icon svgIcon='github'></mat-icon>
+        </a>
+        <a id=last class="box" mat-stroked-button href="https://github.com/jpierre89/sunset-theater">           
             Backend
+            <mat-icon svgIcon='github'></mat-icon>
         </a>
     </mat-card-actions>
 </mat-card>

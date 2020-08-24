@@ -59,27 +59,27 @@ trigger('routeAnimations', [
                 left: 0,
                 width: '100%'
             })
-        ]),
+        ], { optional: true}),
         // Matches the view that is added and hides the newly added view
         //by positioning it to the far left.
         query(':enter', [
             style({ left: '-300%' })
-            ]),
+        ], { optional: true}),
         // Called on the view that is leaving, to run its child animations.
-        query(':leave', animateChild()),
+        query(':leave', animateChild(), { optional: true}),
         // Make the inner animations run in parallel.
         group([
             // Queries the view that is leaving and animates it to slide far to the right.
             query(':leave', [
                 animate('0.5s ease-in-out', style({ left: '300%' }))
-            ]),
+            ], { optional: true}),
             // Queries the view that is entering and animates it to slide in from the left
             query(':enter', [
                 animate('0.5s ease-in-out', style({ left: '0%' }))
-            ])
+            ], { optional: true})
         ]),
         // Called on the new view to run its child animations after the main animation completes.
-        query(':enter', animateChild()),
+        query(':enter', animateChild(), { optional: true}),
     ]),
     
 ]);
